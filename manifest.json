@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "3Bai Next",
+  "version": "1.0",
+  "description": "Enlarge 'next' link in Google search result.",
+  "homepage_url": "http://example.com",
+  "author": "Daisuke Akatsuka",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.co.jp/search*",
+                  "*://www.google.com/search*"],
+      "js": ["main.js"]
+    }
+  ]
+}
